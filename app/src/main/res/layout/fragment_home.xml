@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="1sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.03"
+        android:text="Welcome back!"
+        android:textColor="#fff"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/search"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search for new knowledge"
+                android:textColor="#305f72"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:letterSpacing="0.04"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/search_icon"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_card"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start learning"
+                android:textSize="26dp"
+                android:textColor="#305f72"
+                android:fontFamily="sans-serif-black"
+                android:letterSpacing="0.035"/>
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="categories"
+                android:background="@drawable/categories_button"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:fontFamily="sans-serif-black"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Courses"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:textColor="#305f72"
+            android:letterSpacing="0.02"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="13dp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1"
+                android:layout_width="390dp"
+                android:layout_height="95dp"
+                app:cardBackgroundColor="#fae4f4"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/adobe"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/adobe_xd_icon"/>
+
+                    <TextView
+                        android:id="@+id/t1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@id/adobe"
+                        android:letterSpacing="0.03"
+                        android:text="Adobe XD\nWeb Design"
+                        android:textColor="#305f72"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/duration"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/t1"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/adobe"
+                        android:src="@drawable/estrella"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/duration"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/adobe"
+                        android:text="Free"
+                        android:textColor="#C80241"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_below="@id/c1"
+                android:layout_width="390dp"
+                android:layout_height="95dp"
+                app:cardBackgroundColor="#fff5e5"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp">
+
+                    <ImageView
+                        android:id="@+id/effect"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/after_effects_icon"/>
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@id/effect"
+                        android:letterSpacing="0.03"
+                        android:text="AfterEffect\nVFX and Graphics"
+                        android:textColor="#305f72"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/duration2"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/t2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/effect"
+                        android:src="@drawable/estrella"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/duration2"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/effect"
+                        android:text="Free"
+                        android:textColor="#C80241"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>

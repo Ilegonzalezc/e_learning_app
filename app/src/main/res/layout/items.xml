@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="81dp"
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp">
+
+        <ImageView
+            android:id="@+id/photo_course"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/figma_circle"/>
+
+        <TextView
+            android:id="@+id/tw1"
+            android:text="Figma Essentials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/photo_course"
+            android:letterSpacing="0.03"
+            android:textColor="#305f72"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tw2"
+            android:text="80 courses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tw1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/photo_course"
+            android:textColor="#305f72"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tick"
+            android:src="@drawable/active_tick_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="20dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
